@@ -128,3 +128,16 @@ h1.title {
 .container.features, .container.getting-started {
     margin-top: 20px;
 }
+
+.tabs ul ul {
+    display: none;
+}
+.tabs ul ul li {
+    background-color: #209cee;
+    box-shadow: 0 8px 16px rgba(10,10,10,.1);
+    border: none;
+}
+.tabs ul li:hover ul{
+    display: block;
+    position: absolute;
+}

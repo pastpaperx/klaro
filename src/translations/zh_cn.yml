@@ -1,0 +1,66 @@
+# Warning, this is Hong Kong SAR, China translation 
+# The choice of making traditional Chinese version as zh and simplified Chinese as zh_cn,
+# is purely reflecting the statistic that there are more Hong Kong websites need a CMP script
+# You may reverse it or split into more regions as you see fit.
+
+acceptAll: 全部接受
+acceptSelected: 选择性接受
+close: 关闭
+consentModal:
+  description: 您可以在这版面评估和客制化您希望使用的服务。 请根据阁下的须求选用或停用相关服务。 全都在您的掌握之中。
+  privacyPolicy:
+    name: 私隐政策
+    text: 如欲了解更多，请阅读我们的{privacyPolicy} 。
+  title: 阁下选用的服务
+consentNotice:
+  changeDescription: 自您上次选择後，我们又提供了新的功能，请更新您的许可。
+  description: 您好！我们可以为了 {purposes} 激活一些额外服务吗？ 您可以随时更改或撒回您的许可。
+  imprint:
+    name: 版本说明
+  learnMore: 了解更多
+  privacyPolicy:
+    name: 私隐政策
+  testing: 测试模式！
+contextualConsent:
+  acceptAlways: 总是允许
+  acceptOnce: 单次允许
+  description: 您同意加载由 {title} 提供的额外内容吗？
+decline: 我拒絶
+ok: 我同意
+poweredBy: CMP由Klaro提供！
+privacyPolicy:
+  name: 私隐政策
+  text: 如欲了解更多，请阅读我们的{privacyPolicy} 。
+purposeItem:
+  service: 服务
+  services: 服务
+purposes:
+  advertising:
+    description: 这类服务会处理你的个人信息（浏览／使用习惯），以便为了向您展示个性化或您更感兴趣的广告。
+    title: 展示广告
+  functional:
+    description: '这些是对本网站提供正常服务所必需的您不能在这里停用它们，否则服务将无法正常运作。如果您不同意，只能停止使用。
+
+      '
+    title: 支持核心功能
+  marketing:
+    description: 这类服务会处理你的个人信息（浏览／使用习惯），以便向您介绍我们的产品、服务或相关内容。
+    title: 市场营销
+  performance:
+    description: 这类服务会处理你的个人信息（如地区），以便优化为您服务的效率（如提升下载速度）。
+
+      '
+    title: 性能优化
+save: 保存
+service:
+  disableAll:
+    description: 按一次激活所有可选的服务，再按一次则停用它们
+    title: 激活或停用所有可选的服务
+  optOut:
+    description: 这服务缺省开启，但您可以选择性停用
+    title: (选择性停用)
+  purpose: 目的
+  purposes: 目的
+  required:
+    description: 这类服务业是必需的
+    title: (不可缺少)

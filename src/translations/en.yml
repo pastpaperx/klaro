@@ -4,7 +4,7 @@ acceptSelected: Accept selected
 close: Close
 consentModal:
     description:
-        Here you can assess and customize the services that we'd like to use
+        Here you can assess and customize the services that you'd like to use
         on this website. You're in charge! Enable or disable services as you see fit.
     title: Services we would like to use
 consentNotice:

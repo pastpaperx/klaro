@@ -84,11 +84,17 @@
 
             var translations = klaro.defaultTranslations;
             var langs = Array.from(translations.keys());
+            var navbarMenuLanguage = document.getElementById('navbarMenu-language');
             for(var i=0;i<langs.length;i++){
                 var lang = langs[i];
                 var option = document.createElement('option', {value: lang});
                 option.innerHTML = lang;
                 languageSelect.appendChild(option);
+                var li = document.createElement('li');
+                // var a = document.createElement('a', {href: `javascript:document.documentElement.setAttribute('lang', '${lang}');`});
+                // a.innerHTML = lang;
+                li.innerHTML = (`<a href="javascript:document.documentElement.setAttribute('lang', '${lang}'); klaro.show();">${lang}</a>`);
+                navbarMenuLanguage.appendChild(li)
             }
         })
     </script>
@@ -137,6 +143,9 @@
                         <div class="navbar-end">
                             <div class="tabs is-right">
                                 <ul>
+                                    <li><a href="javascript:;">Language</a>
+<ul id="navbarMenu-language"></ul>
+                                    </li>
                                     <li><a href="#features">Features</a></li>
                                     <li><a href="#getting-started">Getting Started</a></li>
                                     <li><a href="#help">Help</a></li>

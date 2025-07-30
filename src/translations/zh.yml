@@ -1,62 +1,66 @@
-# Warning, this file is partially automatically generated!
-acceptAll: 照单全收
-acceptSelected: 接受选择
-close: 密切
+# Warning, this is Simplified Chinese translation 
+# The choice of making traditional Chinese version as zh and simplified Chinese as zh_cn,
+# is purely reflecting the statistic that there are more Hong Kong websites need a CMP script
+# You may reverse it or split into more regions as you see fit.
+
+acceptAll: 全部接受
+acceptSelected: 選擇性接受
+close: 關閉
 consentModal:
-  description: 在这里，您可以评估和定制我们希望在本网站上使用的服务。您是负责人！您可以根据自己的需要启用或禁用服务。启用或禁用您认为合适的服务。
+  description: 您可以在這版面評估和客制化您希望使用的服務。 請根據閣下的需求選用或停用相關服務。 全都在您的掌握之中。
   privacyPolicy:
-    name: 隐私政策
-    text: 要了解更多，请阅读我们的{privacyPolicy} 。
-  title: 我们想使用的服务
+    name: 私隱政策
+    text: 如欲了解更多，請閱讀我們的{privacyPolicy} 。
+  title: 閣下選用的服務
 consentNotice:
-  changeDescription: 自上次访问后有变化，请更新您的同意。
-  description: 你好！我们可以为{purposes} 启用一些额外的服务吗？您可以随时更改或撤回您的同意。
+  changeDescription: 自您上次選擇後，我們又提供了新的功能，請更新您的許可。
+  description: 您好！我們可以為了 {purposes} 啟用一些額外服務嗎？ 您可以隨時更改或撒回您的許可。
   imprint:
-    name: 印记
-  learnMore: 让我来选
+    name: 版本說明
+  learnMore: 了解更多
   privacyPolicy:
-    name: 隐私政策
-  testing: 测试模式！
+    name: 私隱政策
+  testing: 測試模式！
 contextualConsent:
-  acceptAlways: 总是
-  acceptOnce: 是的，是的
-  description: 你想加载由{title} 提供的外部内容吗？
-decline: 我拒绝
-ok: 没事的
-poweredBy: 与Klaro一起实现!
+  acceptAlways: 總是允許
+  acceptOnce: 單次允許
+  description: 您同意加載由 {title} 提供的額外內容嗎？
+decline: 我拒絶
+ok: 我同意
+poweredBy: CMP由Klaro提供！
 privacyPolicy:
-  name: 隐私政策
-  text: 要了解更多，请阅读我们的{privacyPolicy} 。
+  name: 私隱政策
+  text: 如欲了解更多，請閱讀我們的{privacyPolicy} 。
 purposeItem:
-  service: 服务
-  services: 服务
+  service: 服務
+  services: 服務
 purposes:
   advertising:
-    description: 这些服务处理个人信息，向您展示个性化或基于兴趣的广告。
-    title: 广告宣传
+    description: 這類服務會處理你的個人資訊（瀏覽／使用習慣），以便為了向您展示個性化或您更感興趣的廣告。
+    title: 展示廣告
   functional:
-    description: '这些服务对于本网站的正常运行是必不可少的。您不能在这里禁用它们，否则服务将无法正常运行。
+    description: '這些是對本網站提供正常服務所必需的您不能在這裡停用它們，否則服務將無法正常運作。如果您不同意，只能停止使用。
 
       '
-    title: 服务提供
+    title: 支援核心功能
   marketing:
-    description: 这些服务会处理个人信息，向您展示您可能感兴趣的产品、服务或主题的相关内容。
-    title: 市场营销
+    description: 這類服務會處理你的個人資訊（瀏覽／使用習慣），以便向您介紹我們的產品、服務或相關內容。
+    title: 市場營銷
   performance:
-    description: '这些服务处理个人信息是为了优化本网站提供的服务。
+    description: 這類服務會處理你的個人資訊（如地區），以便優化為您服務的效率（如提升下載速度）。
 
       '
-    title: 性能优化
-save: 挽救
+    title: 性能優化
+save: 儲存
 service:
   disableAll:
-    description: 使用此开关可启用或禁用所有服务。
-    title: 启用或停用所有服务
+    description: 按一次啟用所有可選的服務，再按一次則停用它們
+    title: 啟用或停用所有可選的服務
   optOut:
-    description: 这个服务是默认加载的(但你可以选择退出)
-    title: (选择退出)
+    description: 這服務預設開啟，但您可以選擇性停用
+    title: (選擇性停用)
   purpose: 目的
   purposes: 目的
   required:
-    description: 这种服务是必须的
-    title: (总是需要)
+    description: 這類服務業是必需的
+    title: (不可缺少)

@@ -2,6 +2,7 @@
 // link it here using the appropriate language code.
 
 import zh from './zh.yml';
+import zh_cn from './zh_cn.yml';
 import pt from './pt.yml';
 import ca from './ca.yml';
 import cs from './cs.yml';
@@ -35,6 +36,7 @@ export default {
     el,
     en,
     zh,
+    zh_cn,
     pt,
     es,
     fi,

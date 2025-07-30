@@ -166,6 +166,15 @@ var klaroConfig = {
                 styling: 'Styling',
             },
         },
+        zh:{
+            purposes: {
+                analytics: '訪客統計',
+                security: '系統安全',
+                livechat: '即時對話',
+                advertising: '廣告展示',
+                styling: '介面美化',
+            },
+        },
         en: {
             consentModal: {
                 title: '<u>test</u>',
