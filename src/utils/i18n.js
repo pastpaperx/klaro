@@ -58,7 +58,6 @@ export function language(config, supportedLanguageSet) {
 }
 
 function hget(d, key, defaultValue) {
-    debugger;
     let kl = key;
     if (!Array.isArray(kl)) kl = [kl];
     let cv = d;
