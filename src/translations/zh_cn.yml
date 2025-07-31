@@ -57,7 +57,7 @@ service:
     description: 按一次激活所有可选的服务，再按一次则停用它们
     title: 激活或停用所有可选的服务
   optOut:
-    description: 这服务缺省开启，但您可以选择性停用
+    description: 这服务默认开启，但您可以选择性停用
     title: (选择性停用)
   purpose: 目的
   purposes: 目的

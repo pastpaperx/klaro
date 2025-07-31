@@ -34,7 +34,7 @@ const format = (str, ...rest) => {
     return splits;
 };
 
-export function language(config) {
+export function language(config, supportedLanguageSet) {
     // if a language is given in the config we always return that
     if (config !== undefined && config.lang !== undefined && config.lang !== 'zz') return config.lang;
     const lang = (
@@ -42,15 +42,23 @@ export function language(config) {
         document.documentElement.lang ||
         (config !== undefined && config.languages !== undefined && config.languages[0] !== undefined ? config.languages[0] : 'en')
     ).toLowerCase();
+
+    if(supportedLanguageSet.has(lang))
+        return lang;
+
     const regex = new RegExp('^([\\w]+)-([\\w]+)$');
     const result = regex.exec(lang);
-    if (result === null) {
-        return lang;
+    if(result){
+        const possibleLang = result[1]+'_'+result[2];
+        if(supportedLanguageSet.has(possibleLang)){
+            return possibleLang;
+        }
     }
-    return result[1];
+    return 'en'; // assume will not delete en translation
 }
 
 function hget(d, key, defaultValue) {
+    debugger;
     let kl = key;
     if (!Array.isArray(kl)) kl = [kl];
     let cv = d;
@@ -84,8 +92,6 @@ export function t(trans, lang, fallbackLang, key, ...params) {
     }
     if (!Array.isArray(kl)) kl = [kl];
     let value = hget(trans, [lang, ...kl]);
-    // if a fallback language is defined, we try to look up the translation for
-    // that language instead...
     if (value === undefined && fallbackLang !== undefined)
         value = hget(trans, [fallbackLang, ...kl]);
     if (value === undefined) {
